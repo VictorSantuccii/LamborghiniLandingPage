@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&family=Lobster+Two:ital,wght@1,400;1,700&display=swap');
+
+::selection{
+    background-color: orange;
+    opacity: 0.3;
+    color: black;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.897);
+    font-family: "Exo";
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 500;
+    position: fixed;
+    z-index: 11;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    list-style-type: none;
+}
+
+header ul li img{
+    width: 6%;
+    position: absolute;
+    top: 0px;
+    left: 932px;
+    filter: drop-shadow(0px 0px 20px rgba(1, 1, 1, 0.9));
+}
+
+header ul li a{
+    color: rgb(191, 191, 191);
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 165px;
+    text-transform: uppercase;
+    z-index: 3;
+    
+}
+
+header ul li a:hover{
+    font-weight: 800;
+    transition: all 0.2s ease-in-out;
+    color: orangered;
+    
+}
+
+
+#wpp{
+    position: absolute;
+    width: 1700px;
+    height: 924px;
+    clip-path: polygon(0 0, 62% 0, 32% 100%, 0 100%);
+    z-index: 2;
+}
+
+
+#wpp .wall{
+    height: 924px;
+    width: 1300px;
+    opacity: 0.3;
+    box-shadow: 10px 10px 10px 10px white;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+    width: 800px;
+    height: 380px;
+    position: absolute;
+    top: 37%;
+    left: 51%;
+}
+.container img{
+    width: 80%;
+    filter: drop-shadow(0px 0px 8px rgba(43, 43, 43, 0.9));
+    margin-left: 20px;
+    transform: rotate(-10deg);
+}
+
+.container h1{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.container #get{
+    margin-bottom: 340px;
+    font-size: 46px;
+    opacity: 0.2;
+    letter-spacing: 6px;
+    font-weight: 500;
+    transform: rotate(-1deg);
+    
+}
+
+#get:hover, #hur:hover, #perf:hover, #dws:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+    cursor: default;
+}
+
+.container #hur{
+    margin-bottom: 655px;
+    font-size: 70px;
+    display: inline;
+    margin-left: 80px;
+    font-weight: 800;
+    transform: rotate(-1deg);
+    
+}
+
+.container #perf{
+    margin-bottom: 490px;
+    font-size: 49px;
+    display: inline;
+    letter-spacing: 5px;
+    margin-left: 50px;
+    transform: rotate(-1deg);
+}
+
+.container #dws{
+    margin-bottom: 465px;
+    font-size: 35px;
+    display: inline;
+    letter-spacing: 0px;
+    margin-left: 470px;
+    opacity: 0.2;
+    font-weight: 800;
+}
+
+.container #disc{
+    margin-bottom: -90px;
+    font-size: 30px;
+    display: inline;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-left: 696px;
+    opacity: 0.9;
+    font-weight: 700;
+    color: rgb(255, 68, 0);
+    transform: rotate(deg);
+}
+
+#disc:hover{
+    transform: scale(1.2) rotate(-85deg);
+    transition: all 0.2s;
+    color: white;
+}
+
+.box{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    background-color: rgba(255, 255, 255, 0);
+    width: 1000px;
+    height: 130px;
+}
+
+.box ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.box ul li{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+    list-style: none;
+    font-size: 23px;
+    margin-right: 100px;
+    color: rgb(174, 172, 172);
+    letter-spacing: 1px;
+    font-weight: 300;
+    cursor: default;
+
+}
+
+.box ul li::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 40%;
+    background: orange;
+    left: -10px;
+    transition: all 0.2s;
+    
+}
+
+.box ul li:hover::after{
+    height: 70%;
+    color: white;
+    font-weight: 100;
+}
+
+.box ul li:hover{
+    color: white;
+    font-weight: 700;
+    transform: scale(1.3) rotate(-2deg);
+    transition: all 0.2s;
+}
+
+.sec{
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: -30px;
+    left: 0%;
+    z-index: 10;
+    background-color: rgba(48, 47, 47, 0);
+}
+
+.sec h1{
+    font-family: "Lobster Two";
+    color: white;
+    opacity: 0.2;
+    font-size: 130px;
+    letter-spacing: 5px;
+    margin-left: 50px;
+    
+    
+}
+
+.sec p{
+    display: inline;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    letter-spacing: 6px;
+    margin-top: 150px;
+    margin-left: -125px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 50px;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 79%;
+    left: 11%;
+    background-color: rgb(50, 50, 50);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 350px;
+    height: 70px;
+    border: 1px solid white;
+    z-index: 18;
+    opacity: 0.8;
+}
+
+.btn a{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 29px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background: orangered;
+    transition: all 0.2s;
+}
+
+.btn a:hover{
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+#italy{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 927px;
+    background: rgba(67, 67, 67, 0);
+    top: 0%;
+    left: 84.3%;
+    transform: rotate(deg);
+    opacity: 0.2;
+    z-index: -1;
+
+}
+
+#verde{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background: green;
+    width: 120px;
+    height: 100%;;
+}
+
+#branco{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background: rgb(255, 255, 255);
+    width: 120px;
+    height: 100%;;
+}
+
+#vermelho{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background: rgb(255, 0, 0);
+    width: 120px;
+    height: 100%;;
+}
